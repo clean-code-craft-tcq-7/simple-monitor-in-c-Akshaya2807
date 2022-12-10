@@ -30,6 +30,10 @@ return 1;
   }*/
 
 int main() {
-  //assert(batteryIsOk(25, 70, 0.7));
-  //assert(!batteryIsOk(50, 85, 0));
+  assert(CheckBatteryTemp(25));
+  assert(!CheckBatteryTemp(0));
+  assert(CheckBatterysoc(75);
+  assert(!CheckBatterysoc(15));
+  assert(CheckBatterychargeRate(0.5));
+  assert(!CheckBatterychargeRate(0.9));
 }
