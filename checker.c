@@ -3,8 +3,7 @@
 
 int CheckBatteryTemp(float temperature)
 {
-  if(temperature < 0 || temperature > 45) 
-  {
+  if(temperature < 0 || temperature > 45) {
   printf("Temperature out of range!\n");
   return 0;}
 return 1;
@@ -28,13 +27,10 @@ int CheckBatterychargeRate(float chargeRate){
 int batteryIsOk(float temperature, float soc, float chargeRate) {
   if((CheckBatteryTemp(temperature) == 1) && (CheckBatterysoc(soc)== 1) && (CheckBatterychargeRate(chargeRate)==1))
   {
-    return 1;
+    return 1;}
+  else{
+   return 0;}
   }
-  else
-  {
-   return 0;
-  }
-}
 
 int main() {
   assert(batteryIsOk(25, 70, 0.7));
