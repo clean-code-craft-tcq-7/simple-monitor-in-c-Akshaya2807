@@ -26,7 +26,7 @@ int CheckBatterychargeRate(float chargeRate){
 }
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
-  if((CheckBatteryTemp(temperature) == 1) && (CheckBatterysoc(soc)== && CheckBatterychargeRate(chargeRate)==1))
+  if((CheckBatteryTemp(temperature) == 1) && (CheckBatterysoc(soc)== 1) && (CheckBatterychargeRate(chargeRate)==1))
   {
     return 1;
   }
